@@ -682,25 +682,7 @@
   <script src="assets/js/main.js"></script>
 
 
-  <script>
-    $("#submit-form").submit((e)=>{
-        e.preventDefault()
-        $.ajax({
-            url:"https://script.google.com/macros/s/AKfycbw_VBVD4QF2X5Oj2VOt7WWGSJbL8AVENCpnozL6S8vE0VMJcQGcw1XCnrdsjudQMVRlUw/exec",
-            data:$("#submit-form").serialize(),
-            method:"post",
-            success:function (response){
-                alert("Form submitted successfully")
-                window.location.reload()
-                //window.location.href="https://google.com"
-            },
-            error:function (err){
-                alert("Something Error, Please press the mail icon")
-
-            }
-        })
-    })
-</script>
+ 
 
 </body>
 
